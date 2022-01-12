@@ -1,0 +1,84 @@
+:root {
+  --container-color: #f7f7f7;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-text-dark: #54595f;
+  --color-grey: #525252;
+  --footer-color: #e9e9e9;
+  --selection-color:#52525294;
+
+  --font-cardo: "Cardo", serif;
+  --font-roboto: "Roboto", sans-serif;
+  --thin-weight: 100;
+  --light-weight: 300;
+  --regular-weight: 400;
+  --medium-weight: 500;
+  --bold-weight: 700;
+  --title-font-size: 3.2rem;
+  --medium-font-size: 2rem;
+  --text-font-size: 1.8rem;
+  --small-font-size: 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+
+  @media only screen and (max-width: 1200px) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: 750px) {
+    font-size: 40%;
+  }
+
+  @media only screen and (max-width: 650px) {
+    font-size: 30%;
+  }
+
+  @media only screen and (max-width: 280px) {
+    font-size: 20%;
+  }
+}
+
+body {
+  font-family: var(--font-roboto);
+  font-weight: 400;
+  background-color: var(--container-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
+  ::selection {
+    background-color: var(--selection-color);
+  }
+  

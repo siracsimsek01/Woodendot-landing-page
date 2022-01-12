@@ -1,0 +1,56 @@
+.container {
+    max-width: 140.4rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    max-width: 100%;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-white);
+    height: 7rem;
+}
+
+.main {
+    max-width: 100%;
+    margin-top: 3.6rem;
+}
+
+/*=============== SCROLL UP ===============*/
+.scrollup {
+    position: fixed;
+    background-color: var(--color-grey);
+    right: 2rem;
+    bottom: -30%;
+    display: inline-flex;
+    padding: 1.5rem;  
+    border-radius: 0.5rem;
+    z-index: 1000;
+    opacity: 0.8;
+    transition: .4s;
+  }
+  
+  .scrollup__icon {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .scrollup:hover {
+    background-color: var(--color-text-dark);
+    opacity: 1;
+  }
+  /* Show Scroll Up*/
+  .show-scroll {
+    bottom: 3rem;
+  }
+
+  /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+    width: 0.6rem;
+    background: hsl(152, 4%, 53%);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(152 , 4%, 29%);
+    border-radius: 0.5rem;
+  }
